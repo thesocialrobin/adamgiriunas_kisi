@@ -1,4 +1,4 @@
-import { queryNonResidentSubmissions } from 'backend/kisi.js'; // Replace with actual module
+import { queryNonResidentSubmissions } from 'backend/kisi.js'; 
 
 export const invoke = async ({ payload }) => {
   const email = payload.buyerEmail || payload.contact?.email;
@@ -9,5 +9,5 @@ export const invoke = async ({ payload }) => {
     console.warn('No email found in payload');
   }
 
-  return {}; // Must return an empty object
+  return {}; 
 };
